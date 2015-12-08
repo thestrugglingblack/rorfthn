@@ -1,8 +1,8 @@
 {
   "name": "reveal.js",
   "version": "3.2.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
+  "description": "WWC Ruby on Rails | First Timer's Night",
+  "homepage": "https://www.womenwhocode.com/dc",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -10,9 +10,9 @@
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Zuri Hunter",
+    "email": "zurihunter92@gmail.com",
+    "web": "http://www.zurihunter.com"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,6 @@
     "grunt": "~0.4.5",
     "node-sass": "~3.3.3"
   },
-  
+
   "license": "MIT"
 }
