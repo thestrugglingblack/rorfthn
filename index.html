@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -34,7 +35,7 @@
 		<![endif]-->
 	</head>
 
-	<body>
+	<body id="overall">
 
 		<div class="reveal">
 
@@ -42,44 +43,57 @@
 			<div class="slides">
 				<!-- Wifi Slide -->
 				<section>
-					<label>Wifi Name:</label><p>XXX</p>
-					<label>Wifi Password:</label><p>XXX</p>
+					<!-- style this -->
+
+						<div id="wifi-stuff">
+							<h1>Wifi Name:</h1><p style="font-size: 20px;">I am a Wifi Password</p>
+							<h1>Wifi Password:</h1><p style="font-size: 20px;">I am a Wifi Password</p>
+						</div>
+
+						<div id="wwc-logo">
+							<img src="images/wwc-logo.png"/>
+						</div>
+
 				</section>
 
 				<!-- Introduction Slide -->
-				<section>
+				<section data-background="#5FD8D5">
 					<h1>Ruby on Rails</h1>
 					<h3>First Timer's Night</h3>
 					<h4>Ruby on Rails Leads</h4>
-					<p>
-						<small><a href="http://www.twitter.com/ZuriHunter">Zuri Hunter</a></small>
-						<small><a href="">Katherine McClintic</a></small>
-						<small><a href="">Erin Upton-Cosulich</a></small>
-						<small><a href="">Mary Katherine McKenzie</a></small>
+					<p style="text-align:center;">
+						<small><a href="http://www.twitter.com/ZuriHunter" id="twitter-handles">Zuri Hunter</a></small> |
+						<small><a href="http://twitter.com/scarletalphabet" id="twitter-handles">Katherine McClintic</a></small> |
+						<small><a href="http://twitter.com/ErinUptonCos" id="twitter-handles">Erin Upton-Cosulich</a></small> |
+						<small><a href="http://twitter.com/MaryKMcKenzie" id="twitter-handles">Mary Katherine McKenzie</a></small>
 					</p>
 				</section>
 
 				<!--Table of Content -->
 				<section>
-					<h2>for tonight...</h2>
-					<ul>
-						<li>Slack</li>
-						<li>Developer Environment</li>
-						<li>What is Ruby?</li>
-						<li>What is Rails?</li>
-						<li>Command Terminal</li>
-						<li>Version Control</li>
-						<li>Ruby Resources</li>
-						<li>Rails Resources</li>
-						<li>Other Resources</li>
-						<li>Installation Party</li>
-					</ul>
+					<div style="float:left">
+						<h2>for tonight...</h2>
+						<hr>
+
+						<ul>
+							<li>Slack</li>
+							<li>Development Environment</li>
+							<li>What is Ruby?</li>
+							<li>What is Rails?</li>
+							<li>Rails Websites</li>
+							<li>Command Terminal</li>
+							<li>Version Control Software</li>
+							<li>Other Resources</li>
+							<li>Installation Party</li>
+						</ul>
+				</div>
 				</section>
 
 				<!--Slack Information-->
 				<section>
 					<section data-background="#5FD8D5" >
-						<h1>Slack</h1>
+						<h1 style="text-align: left;">Slack</h1>
+							<hr style=" border: none; height: 3px; background-color:white">
 					</section>
 
 					<section data-background="images/shp.png">
@@ -95,7 +109,7 @@
 							<li>#cyber_security</li>
 							<li>#python</li>
 							<li>#android</li>
-							<li>#front-end-hack-night</li>
+							<li>#front-end</li>
 							<li>#data-science</li>
 							<li>#rubyonrails</li>
 						</ul>
@@ -104,23 +118,27 @@
 					</section>
 
 					<section>
-					<p>	Join the <a href="http://bit.ly/wwcdcslack">Women Who Code Slack Channel</a></p>
+					<p>	Join the <a href="http://bit.ly/wwcdcslack">Women Who Code</a> Slack Channel</p>
 					</section>
 				</section>
 
 				<!--Web Components -->
 				<section>
 					<section data-background="#5FD8D5">
-						<h1>Developer Environment</h1>
+						<h1 style="text-align: left;">Development Environment</h1>
+							<hr style="
+							border: none;
+							height: 3px;
+							background-color:white">
 					</section>
 
 					<section>
-						<p>Text Editor is a development tool that allows you to edit, delete and save a large variety of text files. </p>
+						<p><b><u>Text Editor</b></u> is a development tool that allows you to edit, delete and save a large variety of text files. </p>
 						<ul>
-							<li>Atom</li>
-							<li>NotePad++</li>
-							<li>Sublime Text</li>
-							<li>Brackets</li>
+							<li><a href="https://atom.io/">Atom</li></a>
+							<li><a href="https://notepad-plus-plus.org/">NotePad++</li></a>
+							<li><a href="http://www.sublimetext.com/3">Sublime Text</a></li>
+							<li><a href="http://brackets.io/">Brackets</a></li>
 						</ul>
 					</section>
 
@@ -128,7 +146,7 @@
 					</section>
 
 					<section>
-						<p>Command Line Interface is an application that allows for you to issue commands to programs within the computer.</p>
+						<p><b><u>Command Line Interface</b></u> is an application that allows for you to issue commands to programs within the computer.</p>
 						<ul>
 							<li>PC: Command Prompt</li>
 							<li>Mac: Terminal  </li>
@@ -137,7 +155,7 @@
 					<section data-background="images/mt.gif">
 					</section>
 					<section>
-						Browser is the web application that will allow you to view your application in development environment.
+						<p><u><b>Browser</b></u> is the web application that will allow you to view your application in development environment.</p>
 						<ul>
 							<li>Chrome</li>
 							<li>Firefox</li>
@@ -149,29 +167,52 @@
 					<section data-background="images/fb.gif">
 					</section>
 					<section>
-						<p>Online Intergrated Development Environment is an online web tool that allows you to do your work virtually encompassing
+						<p><b><u>Online Intergrated Development Environment</u></b> is an online web tool that allows you to do your work virtually encompassing
 						all of the tools needed for web development.</p>
 						<ul>
-							<li>Nitrous</li>
-							<li>Cloud 9</li>
-							<li>Koding</li>
-							<li>Codeanywhere</li>
+							<li><a href="https://www.nitrous.io/">Nitrous</a></li>
+							<li><a href="https://c9.io/">Cloud 9</a></li>
+							<li><a href="https://koding.com/">Koding</a></li>
+							<li><a href="https://codeanywhere.com/">Codeanywhere</a></li>
 						</ul>
 					</section>
 					<section data-background="images/ni.gif">
 					</section>
 				</section>
 
-				<!--Ruby Information -->
+				<!--Ruby Information style="position:static" -->
 				<section>
 					<section data-background="#5FD8D5">
-						<h1>What is Ruby?</h1>
+						<h1 style="text-align: left;">What is <span id="head">Ruby</span>?</h1>
+							<hr style="
+							border: none;
+							height: 3px;
+							background-color:white">
 					</section>
 					<section>
-						<a href="https://en.wikipedia.org/wiki/Yukihiro_Matsumoto"><img src="images/matz.jpg"></a>
-						<caption>Yukihiro "Matz" Masumoto<caption>
+						<a href="https://en.wikipedia.org/wiki/Yukihiro_Matsumoto"><img id="hanz" src="images/matz.jpg" style=""></a>
+							<div style="padding-left: px;">
+								<h3><u>Yukihiro "Matz" Masumoto</u></h3>
+								<ul>
+									<li>A scripting language</li>
+									<li>Compilation not required</li>
+									<li>Object Oriented Language</li>
+									<li>Simple and Productive</li>
+									<li>Programmer Happy Language</li>
+								</ul>
+							</div>
+					</section>
+
+
+					<section>
+						<h1>Ruby Resources</h1>
 						<ul>
-							<li></li>
+							<li><a href="http://tryruby.org/levels/1/challenges/0">CodeSchool: TryRuby</a></li>
+							<li><a href="https://www.railstutorial.org/book/rails_flavored_ruby#cha-rails_flavored_ruby">Mike Hartl's ROR Guide: Chapter 4</a></li>
+							<li><a href="https://www.codecademy.com/learn/ruby">CodeAcademy: Ruby</a></li>
+							<li><a href="http://learnrubythehardway.org/book/">Learn Ruby the Hard Way</a></li>
+							<li><a href="http://rubykoans.com/">Ruby Koans</a></li>
+							<li><a href="http://www.codewars.com/">Code Wars</a></li>
 						</ul>
 					</section>
 				</section>
@@ -179,375 +220,275 @@
 				<!--Rails Information -->
 				<section>
 					<section data-background="#5FD8D5">
-						<h1>What is Rails?</h1>
+						<h1 style="text-align: left;">What is <span id="head">Rails</span>?</h1>
+							<hr style="
+							border: none;
+							height: 3px;
+							background-color:white">
+					</section>
+					<section>
+						<a href=""><img src="images/dh.jpg" id="hanz"></a>
+						<h3><u>David Hansson</u></h3>
+						<ul>
+							<li>Backend Framework</li>
+							<li>Model View Controller Framework</li>
+							<li>Out-of-the-Box tools
+								<ul>
+									<li>Scaffolding</li>
+									<li>WEBrick</li>
+								</ul>
+							</li>
+							<li>Convention over Configuration</lsi>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Model-View-Controller</h3>
+						<img src="images/mvc.png" id="mvc">
+						<ul id="mvc-list">
+							<li>Model
+								<ul>
+									<li>This aspect of the architecture pattern <br>deals with the maintainance of the data.</li>
+								</ul>
+							</li>
+							<li>View
+								<ul>
+									<li>The View deals with presenting the user with <br> data that comes from model base off of their interaction</li>
+								</ul>
+							</li>
+							<li>Controller
+								<ul>
+									<li>The Controller deals with the interaction <br> between the view and model.</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Rails Resources</h1>
+						<ul>
+							<li><a href="https://www.codecademy.com/learn/learn-rails">Code Academy: Ruby on Rails</a></li>
+							<li><a href="https://www.railstutorial.org/book/">Mike Hartl Ruby on Rails Tutorial</a></li>
+							<li><a href="https://www.codeschool.com/courses/rails-for-zombies-redux">Code School: Rails for Zombies</a></li>
+							<li><a href="https://www.railstutorial.org/book/">Rails Crash Course: A No Nonsense Guide to Rails Development</a></li>
+						</ul>
 					</section>
 				</section>
+
+				<!-- Live Rails Apps -->
+				<section>
+					<section data-background="#5FD8D5">
+						<h1 style="text-align: left;">Rails Websites</h1>
+							<hr style="
+							border: none;
+							height: 3px;
+							background-color:white">
+					</section>
+
+					<section data-background="images/abnb.gif">
+						<img class="rw" src="images/bnb.png">
+					</section>
+
+					<section data-background="images/bberg.gif">
+						<img class="rw" src="images/bberg.png">
+					</section>
+
+					<section data-background="images/ls.gif">
+							<img class="rw" src="images/ls.jpg">
+					</section>
+
+					<section data-background="images/scribd.gif">
+						<img class="rw" src="images/scribd.jpg">
+					</section>
+
+
+
+					<section data-background="images/tw.gif">
+						<img src="images/tw.jpg">
+					</section>
+
+					<section>
+						<div style="float: left;">
+							<h1>Pros</h1>
+							<ul>
+								<li>Easy Prototyping</li>
+								<li>Large Community</li>
+								<li>Flexibility</li>
+							</ul>
+						</div>
+
+					<div style="float: right;">
+						<h1>Cons</h1>
+						<ul>
+							<li>Perfomance Issues</li>
+							<li>Security</li>
+							<li>Scalability</li>
+						</ul>
+					</div>
+					</section>
+				</section>
+
+				<!--Mini Break -->
+				<section data-background="images/ror.gif">
+				</section>
+
 
 				<!--Command Terminal -->
 				<section>
 					<section data-background="#5FD8D5">
-						<h1>Commands to Command Line </h1>
+						<h1 style="text-align: left;">Commands to Command Line </h1>
+							<hr style="
+							border: none;
+							height: 3px;
+							background-color:white">
 					</section>
 					<section>
 						<ul>
-							<li>cd ~</li>
+							<li><b><u>cd ~</u></b>
+								<ul>
+									<li> Switches to the home directory within the file management system.</li>
+								</ul>
+							</li>
+							<li><b><u>cd ..</u></b>
+								<ul>
+									<li>Goes back one level within the file management system.</li>
+								</ul>
+							</li>
+							<li><b><u>mkdir "NewFolderName"</u></b>
+								<ul>
+									<li>Creates a new directory/folder.</li>
+								</ul>
+							</li>
+							<li><b><u>dir or ls</u></b>
+								<ul>
+									<li>Shows the current folders and files that are in the directory.</li>
+								</ul>
+							</li>
 						</ul>
 					</section>
+
+					<section>
+						<h1>Resources on CLI</h1>
+						<ul>
+							<li><a href="http://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course">Vikings Coding School Command Line Crash Course</a></li>
+							<li><a href="http://cli.learncodethehardway.org/">Learn Code the Hard Way</a></li>
+							<li><a href="https://www.codecademy.com/learn/learn-the-command-line">Code Academy: The Command Line</a></li>
+						</ul>
+					</section>
+
 				</section>
 
 				<!--Version Control -->
 				<section>
 					<section data-background="#5FD8D5">
-						<h1>Version Control Management</h1>
+						<h1 style="text-align: left;">Version Control Software</h1>
+							<hr style="
+							border: none;
+							height: 3px;
+							background-color:white">
 					</section>
-				</section>
-
-				<!--Ruby Resources -->
-				<section>
-					<section data-background="#5FD8D5">
-						<h1>Ruby Resources</h1>
+					<section>
+						<p><b><u>Version Control Software</b></u> is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+						Some examples of version control software are:</p>
+						<ul>
+							<li>Git</li>
+							<li>Mercurial</li>
+							<li>Bazaar</li>
+							<li>Fossil</li>
+						</ul>
 					</section>
-				</section>
 
-				<!--Rails Resources -->
-				<section>
-					<section data-background="#5FD8D5">
-						<h1>Rails Resources</h1>
+					<section>
+						<h3>Git</h3>
+						<img src="images/git.png" id="git" style="background: none; ">
+						<p id="git-p" style="text-align:left;">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+						<ul id="git-list">
+							<li>Fast Performance</li>
+							<li>Recent Popularity</li>
+							<li>Easy to Use</li>
+							<li>Community</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Github</h3>
+						<img src="images/octocat.png" id="gh">
+						<p id="gh-p">Github is a web-based Git repository hosting service.</p>
+						<ul>
+							<li>30 million subscribers</li>
+							<li>Easy Collaboration</li>
+							<li>Integrate Tracking Issue</li>
+							<li>Great Integrations</li>
+						</ul>
+					</section>
+
+					<section data-background="images/gh.gif">
+					</section>
+
+					<section>
+						<h1>Resources</h1>
+						<ul>
+							<li><a href="https://www.codeschool.com/paths/git">Code School: Git</a></li>
+							<li><a href="https://www.codecademy.com/learn/learn-git"> Code Academy: Learn Git</a> </li>
+							<li><a href="http://pcottle.github.io/learnGitBranching/">Learn Git Branching</a></li>
+							<li><a href="http://git-scm.com/book/en/v2">Pro Git by Scott Chacon</a></li>
+
+						</ul>
 					</section>
 				</section>
 
 				<!--Other Resources -->
 				<section>
 					<section data-background="#5FD8D5">
-						<h1>Other Resources</h1>
+						<h1 style="text-align: left;">Other Resources</h1>
+							<hr style="
+							border: none;
+							height: 3px;
+							background-color:white">
+					</section>
+
+					<section>
+						<h3>Tutorials</h3>
+						<ul>
+							<li><a href="	http://tutorials.jumpstartlab.com/projects/blogger.html">Jumpstart Blogger Tutorial</a></li>
+							<li><a href="https://www.youtube.com/watch?v=BI_VnnOLSKY">Mackenzie Child: Rails Blog</a></li>
+							<li><a href="https://www.youtube.com/watch?v=exEduZlJS7Q&list=PLDmvslp_VR0xlwr5lAx2PDsZLu7oIOhpX">Learn Ruby on Rails from Scratch</a></li>
+
+						</ul>
+					</section>
+
+					<section>
+						<h3>Twitter Accounts to follow</h3>
 					</section>
 				</section>
 
 				<section>
 					<section data-background="#5FD8D5">
-						<h1> Installation Party!</h1>
+						<h1 style="text-align: left;"> Installation Party!</h1>
+						<hr style="
+						border: none;
+						height: 3px;
+						background-color:white">
 					</section>
-				</section>
 
-
-				<!-- Example of nested vertical slides -->
-				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h1>Prerequisites</h1>
+						<ul>
+							<li>Laptop</li>
+							<li>Install XCode (MAC)</li>
+						</ul>
 					</section>
+
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<p>1. Go to <a href="http://www.installrails.com/">www.installrails.com</a></p>
 					</section>
+
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
+						<h1>End Result</h1>
 					</section>
-				</section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+					<section data-background="images/railshp.png">
 					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
 				</section>
 
 			</div>

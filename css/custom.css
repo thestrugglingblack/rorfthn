@@ -1,0 +1,94 @@
+#matz {
+  float: left;
+
+}
+
+#hanz{
+  float: right;
+}
+
+.rw{
+  text-align: center;
+}
+
+img{
+  border: none !important;
+}
+
+#head {
+  color: white;
+}
+
+#overall {
+  text-align: left;
+}
+
+div, #wifi-info {
+  float:left;
+}
+
+#wwc-logo {
+  float: right;
+  height: 50%;
+  width: 50%;
+
+}
+
+#wifi-stuff {
+  float: right;
+  height: 50%;
+  width: 50%;
+  font-size: 15px;
+  padding-top: 100px;
+}
+
+#twitter-handles{
+  color: white;
+}
+
+#mvc{
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  float: left;
+}
+
+#mvc-list{
+  font-size: 25px;
+  float: right;
+  padding-top: 40px;
+}
+
+#git {
+  float: left;
+  width: 30%;
+  height: 30%;
+  padding-right: 100px;
+  box-shadow: none;
+}
+
+#git-list{
+
+  /*font-size: 25px;*/
+}
+
+#git-p{
+  /*font-size: 25px;*/
+  padding-left: 10px;
+}
+
+#gh{
+  width: 40%;
+  height: 60%;
+  background: none;
+  box-shadow: none;
+  float: right;
+}
+
+#gh-p{
+  text-align: justify;
+}
+
+/* Add feedback survey for wwc....use typeform
+/Add twitter accounts to follow
+/work around tip for SSL
