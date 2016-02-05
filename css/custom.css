@@ -89,6 +89,11 @@ div, #wifi-info {
   text-align: justify;
 }
 
-/* Add feedback survey for wwc....use typeform
-/Add linkts to the twitter account names
-/Fix CSS for Possible Conflicts
+#feedback{
+  color:black;
+
+  a:hover{
+    color:white !important;
+  }
+
+}
