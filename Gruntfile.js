@@ -1,5 +1,7 @@
 /* global module:false */
 module.exports = function(grunt) {
+	var hostname = grunt.option('hostname') || 'localhost'; //added line
+
 	var port = grunt.option('port') || 8000;
 	var base = grunt.option('base') || '.';
 
@@ -92,6 +94,7 @@ module.exports = function(grunt) {
 		connect: {
 			server: {
 				options: {
+					hostname: hostname, //added line
 					port: port,
 					base: base,
 					livereload: true,
